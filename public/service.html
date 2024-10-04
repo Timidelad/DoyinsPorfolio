@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        #navDiv {
+            position: sticky;
+            top: 10px;
+            z-index: 1;
+        }
+
+        
+        .scroll-container {
+            width: 100%;
+            overflow: hidden; /* Hide overflow */
+        }
+
+        .scroll-content {
+            display: flex;
+            animation: scroll 25s linear infinite; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item {
+            white-space: nowrap;
+            color: #989898;
+            margin-right: 25px;
+            /* margin-left: 25px; */
+            /* width: 250px; */
+            /* height: 100px; */
+            /* background-color: #f0f0f0; */
+            /* margin-right: 10px; */
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            font-size: 20px;
+            /* font-weight: bold; */
+            /* text-align: center; */
+        }
+
+        @keyframes scroll {
+         0% {
+        transform: translateX(100%);
+        }
+        100% {
+        transform: translateX(-100%);
+        }
+        }
+        
+
+    </style>
+</head>
+<body class="font-workSans bg-backGroundCl">
+    <div class="mx-[10px] my-[20px] lg:mx-[120px]"> <!--container-->
+        <nav class="flex items-center justify-between bg-navBarCl px-[7px] py-[10px] rounded-[10px] opacity-[.56] backdrop-blur-[40px] border-white border-opacity-15 border-[1px]" id="navDiv">
+            <div class="font-bold text-base text-boldTextCl lg:text-[15px]">OLU ADE'S PEN</div>
+            <img class="block lg:hidden w-[40px] h-[40px]" src="./images/Menu (3).png" alt="nav-bar">
+            <div class="hidden lg:flex lg:text-bodyTextCl lg:gap-x-5 lg:font-semibold lg:text-[10px] lg:items-center">
+                <a class="hover:cursor-pointer" href="./index.html" >HOME</a>
+                <a class="hover:cursor-pointer" href="./about.html">ABOUT ME</a>
+                <a class=" hover:cursor-pointer" href="./myWorkPoetry.html">MY WORK</a>
+                <a class="hover:cursor-pointer border-bodyTextCl border-[1px] rounded-[10px] py-[5px] px-[5px]" href="./service.html">SERVICES</a>
+                <a class="hover:cursor-pointer" href="./blog.html">BLOG</a>
+                <a class="hover:cursor-pointer" href="./contact.html">CONTACT ME</a>
+            </div>
+            <div class="hover:cursor-pointer hidden lg:block lg:bg-purpleCl lg:bg-opacity-20 lg:border-purpleSt lg:border-[1px] lg:border-opacity-20 lg:text-[12px] lg:text-purpletx lg:px-[18px] lg:py-[8px] lg:rounded-[10px] lg:font-semibold">Book a call</div>
+        </nav>
+
+        <div class="mt-8 p-3 border-white border-opacity-15 rounded-[10px] border-[1px]">
+            <div class="font-bold text-base text-boldTextCl">MY SERVICES</div>
+            <div class="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-3">
+                <div class=" py-2 mt-2 bg-imgContainerCl bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] rounded-[10px] w-full p-2">
+                    <div class="flex flex-row-reverse justify-between items-center">
+                        <img src="./images/Content.png" class="w-[40px] h-[40px]" alt="">
+                        <div class="font-bold tracking-wider text-bodyTextCl text-[13px]">CONTENT WRITING</div>
+                    </div>
+                    <div class="font-normal tracking-wider text-bodyTextCl text-[13px] mt-1">I create interesting pieces on various topics. These pieces are usually light and fun yet educative, informative, short and expressive.</div>
+                </div>
+                <div class=" py-2 mt-2 bg-imgContainerCl bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] rounded-[10px] w-full p-2">
+                    <div class="flex flex-row-reverse justify-between items-center">
+                        <img src="./images/poetry (1).png" class="w-[40px] h-[40px]" alt="">
+                        <div class="font-bold tracking-wider text-bodyTextCl text-[13px]">POETRY WRITING</div>
+                    </div>
+                    <div class="font-normal tracking-wider text-bodyTextCl text-[13px] mt-1">I take creativity a step further by using deep imagery, words, lyrics, and rhythms to express inner ideas, thoughts, and feelings that sometimes, all other forms of writing may not be able to express, but I do so well with poetry.</div>
+                </div>
+                <div class=" py-2 mt-2 bg-imgContainerCl bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] rounded-[10px] w-full p-2">
+                    <div class="flex flex-row-reverse justify-between items-center">
+                        <img src="./images/story-telling.png" class="w-[40px] h-[40px]" alt="">
+                        <div class="font-bold tracking-wider text-bodyTextCl text-[13px]">STORYTELLING</div>
+                    </div>
+                    <div class="font-normal tracking-wider text-bodyTextCl text-[13px] mt-1">I take creativity a step further by using deep imagery, words, lyrics, and rhythms to express inner ideas, thoughts, and feelings that sometimes, all other forms of writing may not be able to express, but I do so well with poetry.</div>
+                </div>
+                <div class=" py-2 mt-2 bg-imgContainerCl bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] rounded-[10px] w-full p-2">
+                    <div class="flex flex-row-reverse justify-between items-center">
+                        <img src="./images/essay.png" class="w-[40px] h-[40px]" alt="">
+                        <div class="font-bold tracking-wider text-bodyTextCl text-[13px]">ESSAY WRITING</div>
+                    </div>
+                    <div class="font-normal tracking-wider text-bodyTextCl text-[13px] mt-1">I take creativity a step further by using deep imagery, words, lyrics, and rhythms to express inner ideas, thoughts, and feelings that sometimes, all other forms of writing may not be able to express, but I do so well with poetry.</div>
+                </div>
+                <div class=" py-2 mt-2 bg-imgContainerCl bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] rounded-[10px] w-full p-2">
+                    <div class="flex flex-row-reverse justify-between items-center">
+                        <img src="./images/Blog (1).png" class="w-[40px] h-[40px]" alt="">
+                        <div class="font-bold tracking-wider text-bodyTextCl text-[13px]">BLOGGING</div>
+                    </div>
+                    <div class="font-normal tracking-wider text-bodyTextCl text-[13px] mt-1">I take creativity a step further by using deep imagery, words, lyrics, and rhythms to express inner ideas, thoughts, and feelings that sometimes, all other forms of writing may not be able to express, but I do so well with poetry.</div>
+                </div>
+                <div class=" py-2 mt-2 bg-imgContainerCl bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] rounded-[10px] w-full p-2">
+                    <div class="flex flex-row-reverse justify-between items-center">
+                        <img src="./images/copywriting.png" class="w-[40px] h-[40px]" alt="">
+                        <div class="font-bold tracking-wider text-bodyTextCl text-[13px]">COPYWRITING</div>
+                    </div>
+                    <div class="font-normal tracking-wider text-bodyTextCl text-[13px] mt-1">I take creativity a step further by using deep imagery, words, lyrics, and rhythms to express inner ideas, thoughts, and feelings that sometimes, all other forms of writing may not be able to express, but I do so well with poetry.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 p-3 border-white border-opacity-15 rounded-[10px] border-[1px]">
+            <div class="grid grid-cols-2 gap-4">
+                <img src="./images/How to know when a man likes you.png" class="w-full h-auto rounded-[10px]" alt="">
+                <img src="./images/Are You Depressed_.png" class="w-full h-auto rounded-[10px]" alt="">
+            </div>
+            <div class="text-boldTextCl mt-3 p-2 bg-imgContainerCl px-[20px] bg-opacity-55 border-[1px] border-white border-opacity-15  backdrop-blur-[40px] py-[15px] rounded-[10px] flex flex-col justify-center items-center tracking-wider">
+                <div class="text-center">Let&rsquo;s collaborate and achieve great results together. I'm ready to bring my skills to your team</div>
+                <div class="flex justify-center items-center">
+                    <div class="font-semibold">LETS TALK</div>
+                    <img src="./images/Right.png" class="w-[30px] h-[30px]" alt="">
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-5">
+            <div class="flex items-center justify-center gap-3 mt-4">
+                <img src="./images/Instagram.png" class="w-[25px] h-[25px]" alt="">
+                <img src="./images/WhatsApp.png" class="w-[25px] h-[25px]" alt="">
+                <img src="./images/Email.png" class="w-[25px] h-[25px]" alt="">
+                <img src="./images/Twitter.png" class="w-[25px] h-[25px]" alt="">
+            </div>
+
+            <div class="text-bodyTextCl text-[12px] text-center mt-5">Copyright &copy; All rights reserved.</div>
+        </footer>
+    </div>
+    
+</body>
+</html>
