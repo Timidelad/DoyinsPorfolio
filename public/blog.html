@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
     <title>My work - blogging</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -15,6 +16,12 @@
         #navDiv {
             position: sticky;
             top: 10px;
+            z-index: 1;
+        }
+
+        #nav-Links {
+            position: sticky;
+            bottom: 5px;
             z-index: 1;
         }
 
@@ -53,9 +60,9 @@
 </head>
 <body class="font-workSans bg-backGroundCl">
     <div class="mx-[10px] my-[20px] lg:mx-[120px]"><!--container-->
-        <nav class="flex items-center justify-between bg-navBarCl px-[7px] py-[10px] rounded-[10px] opacity-[.56] backdrop-blur-[40px] border-white border-opacity-15 border-[1px]" id="navDiv">
+        <nav class="flex items-center justify-between bg-navBarCl px-[7px] py-[10px] rounded-[10px] opacity-[0.9] backdrop-blur-[40px] border-white border-opacity-15 border-[1px]" id="navDiv">
             <div class="font-bold text-base text-boldTextCl lg:text-[15px]">OLU ADE'S PEN</div>
-            <img class="block lg:hidden w-[40px] h-[40px]" src="./images/Menu (3).png" alt="nav-bar">
+            <img class="block lg:hidden w-[40px] h-[40px]" src="./images/Menu (3).png" alt="nav-bar" id="navIcon">
             <div class="hidden lg:flex lg:text-bodyTextCl lg:gap-x-5 lg:font-semibold lg:text-[10px] lg:items-center">
                 <a class="hover:cursor-pointer" href="./index.html" >HOME</a>
                 <a class="hover:cursor-pointer" href="./about.html">ABOUT ME</a>
@@ -102,6 +109,17 @@
 
             <div class="text-bodyTextCl text-[12px] text-center mt-5">Copyright &copy; All rights reserved.</div>
         </footer>
+
+        <div class="hidden" id="nav-Links">
+            <div class=" flex flex-col gap-3 justify-center items-center bg-imgContainerCl px-[20px] bg-opacity-55 border-[1px] border-white border-opacity-15  backdrop-blur-[40px] py-[15px] rounded-[10px] h-[250px]  lg:hidden" >
+                <a class="text-bodyTextCl" href="./index.html">HOME</a>
+                <a href="./about.html" class="text-bodyTextCl">ABOUT</a>
+                <a href="./myWorkPoetry.html" class="text-bodyTextCl">MY WORK</a>
+                <a href="./service.html" class="text-bodyTextCl">SERVICE</a>
+                <a href="./blog.html" class="text-bodyTextCl border-bodyTextCl border-[1px] rounded-[10px] py-[5px] px-[5px] hover:cursor-pointer">BLOG</a>
+                <a href="./contact.html" class="text-bodyTextCl">CONTACT</a>
+            </div>
+        </div>
     </div>
     
 </body>
