@@ -19,6 +19,15 @@ module.exports = {
       },
       letterSpacing: {
         'normalSpace': '15%'
+      },
+      keyframes: {
+        wiggle : {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(10px)' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 2s ease-in-out infinite',
       }
     },
   },
