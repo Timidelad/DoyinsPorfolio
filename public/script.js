@@ -25,6 +25,19 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker([7.6211, 5.2214]).addTo(map).bindPopup('A pretty CSS popup.<br> Easily customizable.')
 
-// let navIcon = document.getElementById('navIcon');
-// console.log(navIcon)
-// console.log("hello");
+function sendMail() {
+    let parms = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_q8z51z3", "template_99n6em2", parms)
+    .then(function(response) {
+        alert("Message sent successfully! \u{1F389}"); 
+    })
+    .catch(function(error) {
+        alert("Oops! Something went wrong. Please try again. \u{274C}");
+    });
+};
