@@ -25,19 +25,27 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker([7.6211, 5.2214]).addTo(map).bindPopup('A pretty CSS popup.<br> Easily customizable.')
 
-function sendMail() {
-    let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value
+
+const contactForm = document.getElementById('contactForm');
+
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();  
+
+    // Collect form data
+    const formData = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
     };
 
-    emailjs.send("service_q8z51z3", "template_99n6em2", parms)
+    // Use EmailJS to send form data
+    emailjs.send('service_q8z51z3', 'template_99n6em2', formData)
     .then(function(response) {
-        alert("Message sent successfully! \u{1F389}"); 
+        alert("Message sent successfully! \u{1F389}");
     })
     .catch(function(error) {
-        alert("Oops! Something went wrong. Please try again. \u{274C}");
+        alert("Oops! Something went wrong. \u{274C}");
     });
-};
+});
