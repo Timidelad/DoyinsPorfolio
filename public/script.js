@@ -85,4 +85,8 @@ contactForm.addEventListener('submit', function(e) {
     .catch(function(error) {
         alert("Oops! Something went wrong. \u{274C}");
     });
+    document.getElementById('name').value =''
+    document.getElementById('email').value = ''
+    document.getElementById('subject').value =''
+    document.getElementById('message').value =''
 });
