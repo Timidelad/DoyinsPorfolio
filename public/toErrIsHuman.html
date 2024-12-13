@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4L8GLMLP3H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4L8GLMLP3H");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/doyin-fav (1).png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/doyin-fav (1).png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="./images/doyin-fav (1).png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./images/doyin-fav (1).png"
+    />
+    <link rel="icon" href="./images/doyin-fav (1).png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./images/doyin-fav (1).png" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Story Telling - To err is human, to forgive is divine</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      #nav-icon {
+        position: sticky;
+        top: 10px;
+        z-index: 1;
+      }
+
+      #nav-Links {
+        position: sticky;
+        bottom: 5px;
+        z-index: 1;
+      }
+
+      .scroll-container {
+        width: 100%;
+        overflow: hidden; /* Hide overflow */
+      }
+
+      .scroll-content {
+        display: flex;
+        animation: scroll 25s linear infinite;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item {
+        white-space: nowrap;
+        color: #989898;
+        margin-right: 25px;
+        font-size: 20px;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      @font-face {
+        font-display: block;
+        font-family: Roboto;
+        src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2)
+            format("woff2"),
+          url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff)
+            format("woff");
+      }
+
+      @font-face {
+        font-display: fallback;
+        font-family: Roboto;
+        font-weight: 600;
+        src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2)
+            format("woff2"),
+          url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff)
+            format("woff");
+      }
+
+      @font-face {
+        font-display: fallback;
+        font-family: Roboto;
+        font-weight: 700;
+        src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2)
+            format("woff2"),
+          url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff)
+            format("woff");
+      }
+
+      #sib-container input:-ms-input-placeholder {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        color: #c0ccda;
+      }
+
+      #sib-container input::placeholder {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        color: #c0ccda;
+      }
+
+      #sib-container textarea::placeholder {
+        text-align: left;
+        font-family: Helvetica, sans-serif;
+        color: #c0ccda;
+      }
+
+      #sib-container a {
+        text-decoration: underline;
+        color: #2bb2fc;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+    />
+  </head>
+  <body class="font-workSans bg-backGroundCl">
+    <div class="mx-[10px] my-[20px] lg:mx-[120px]">
+      <nav
+        class="flex items-center justify-between px-[7px] py-[10px] rounded-[10px] opacity-[0.9] backdrop-blur-[40px] border-white border-opacity-15 border-[1px] bg-imgContainerCl"
+        id="nav-icon"
+      >
+        <div class="font-bold text-base text-boldTextCl lg:text-[15px]">
+          OLU ADE'S PEN
+        </div>
+        <img
+          class="block lg:hidden w-[40px] h-[40px]"
+          src="./images/Menu (3).png"
+          alt="nav-bar"
+          id="navIcon"
+        />
+        <div
+          class="hidden lg:flex lg:text-bodyTextCl lg:gap-x-5 lg:font-semibold lg:text-[10px] lg:items-center"
+        >
+          <a class="hover:cursor-pointer" href="./index.html">HOME</a>
+          <a class="hover:cursor-pointer" href="./about.html">ABOUT</a>
+          <a class="hover:cursor-pointer" href="./myWorkPoetry.html">MY WORK</a>
+          <a class="hover:cursor-pointer" href="./service.html">SERVICES</a>
+          <a
+            class="hover:cursor-pointer border-bodyTextCl border-[1px] rounded-[10px] py-[5px] px-[5px]"
+            href="./blog.html"
+            >BLOG</a
+          >
+          <a class="hover:cursor-pointer" href="./contact.html">CONTACT ME</a>
+        </div>
+        <a
+          href="https://calendly.com/oluadedoyin09"
+          class="hover:cursor-pointer hidden lg:block lg:bg-purpleCl lg:bg-opacity-20 lg:border-purpleSt lg:border-[1px] lg:border-opacity-20 lg:text-[12px] lg:text-purpletx lg:px-[18px] lg:py-[8px] lg:rounded-[10px] lg:font-semibold"
+          >Book a call</a
+        >
+      </nav>
+
+      <div
+        class="mt-4 p-2 bg-imgContainerCl px-[20px] bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] py-[15px] rounded-[10px]"
+      >
+        <div class="text-center font-semibold text-[16px] text-boldTextCl">
+          To err is human, to forgive is divine
+        </div>
+        <img
+          src="./images/to-err-is-human.jpg"
+          class="mt-3 rounded-[10px]"
+          alt=""
+        />
+        <div class="flex justify-between items-center mt-2">
+          <div class="text-bodyTextCl text-[13px]">Dec, 14 2024</div>
+          <div class="text-purpletx text-[13px]">OLU ADE</div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-start items-start mt-4"
+      >
+        <div
+          class="p-2 bg-imgContainerCl px-[20px] bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] py-[15px] rounded-[10px] text-[13px] text-boldTextCl"
+        >
+          <div class="mb-4">
+            Mama said "vengeance belongs to the Lord, the creator of all
+            humans". If I were human, I would have agreed with Mama, but on that
+            very night, I became a monster.
+          </div>
+          <div class="mb-4">
+            "I trust the God I serve, he will never go scot free". Then the God
+            she served should have wiped off my memory, or at the very least,
+            made sure he never crossed my path. Instead, he brought him my way.
+            Not only him, but also his wife and three adorable kids. As if that
+            wasn't enough, he became a pastor. Tell me, how can God punish a man
+            who now serves him diligently? So, I'll do it for Him just this one
+            time. The rest, I'll leave to Him.
+          </div>
+          <div class="mb-4">
+            How do you forgive a man that raped your sister till she bled to
+            death? A man who killed your soul, destroyed your life, and made you
+            barren due to his many beatings? You forgive him and move on?
+          </div>
+          <div class="mb-4">----------</div>
+          <div class="mb-4">
+            Eight years had passed since it happened, and seven years since
+            Mama's death. I had shut out the world. My neighbour, whom I barely
+            spoke to, often slipped church pamphlets under my door. I never read
+            them, I never came to her church either, but she didn't stop.
+          </div>
+          <div class="mb-4">
+            That day, for the first time, I read one before tossing it in the
+            bin. It spoke of peace. It didn't exactly move me, but it was Mama's
+            death anniversary, and I remembered her last words, "Leave him, live
+            your life and find peace." Perhaps I'd find peace in the house of
+            God. Maybe I'd feel human again. So, I went to church that Sunday.
+          </div>
+          <div class="mb-4">
+            It was my first time in eight years, and permit me to say; God has a
+            sense of humour. As I sat down, I saw Marcus on the podium, holding
+            a microphone. The universe is cruel, isn't it? It has its way of
+            mocking you.
+          </div>
+          <div class="mb-4">
+            I stood still on my seat, as hurtful memories surfaced in my head,
+            and I tried to shut down all the events that had happened, that had
+            led me here but yet it came like as if it happened just yesterday,
+            and I remembered when it all started.
+          </div>
+          <div class="mb-4">
+            It was Saturday, exactly 10am, I was walking down the aisle in my
+            dream gown, the one he had picked for me, for my wedding, for our
+            wedding. I could see his handsome face from afar, though the veil
+            blurred it slightly. Mama smiled, her lips curved with pride. I had
+            made her proud. I had not become like her without a husband as the
+            rumours say.
+          </div>
+          <div class="mb-4">
+            Everything happened so fast; the songs, hymns, my sister wiping
+            tears from her eyes in excitement, I tried to shake off the memory
+            of her crying for it felt like an irony, an irony of things to come.
+          </div>
+          <div class="mb-4">
+            I tried to move to another memory, I landed on another one that
+            happened before Chima's death. I was cooking, my eyes swollen, my
+            hair scattered, I stirred the stew with the little strength I had
+            left. Then he came in, he started an argument. I remained silent. I
+            wasn't ready for it, the pain of the previous beating was still
+            there, so I kept quiet and ignored him, but my silence enraged him
+            more and he turned me to himself and slapped me. I hadn't expected
+            it, I thought staying silent would keep him calm. Tears welled up in
+            my eyes, "I'm sorry", I gasped, though I didn't even know what I'd
+            done wrong.
+          </div>
+          <div class="mb-4">
+            Another memory; Chima had moved in with us. She got admitted into a
+            programme near our place. I had pleaded with Mama to let her rent a
+            place, I even offered to pay for it, but she did not understand. My
+            husband didn't want to hear any of it after I had told him, "do you
+            want me to tell my mum that you said she cannot come?", I had asked
+            him. Of course, that led to another beating, "you want to paint me
+            black? He yelled while beating me.
+          </div>
+          <div class="mb-4">
+            Two days later, Chima had shown up at our place with the biggest
+            smile after I had told Mama all the possible reasons she shouldn't
+            come. I remembered her running to meet her brother in law to hug
+            him. He was so happy to see her that I thought he had changed his
+            mind. I smiled as I closed the door. And I closed Chima's chapter in
+            my heart, for it haunted me the most.
+          </div>
+          <div class="mb-4">
+            The rest of the memories were blurry. Blood, more blood, my sister,
+            his eccentric laughter, a sharp kick, the hospital, Mama's death.
+          </div>
+          <div class="mb-4">
+            And now, here he was, preaching forgiveness. Preaching how Christ
+            forgave and loved us while we were yet sinners.
+          </div>
+          <div class="mb-4">
+            Maybe I would have forgiven him if he hadn't looked so happy, if his
+            three kids had'nt run to meet him screaming "Daddy!". If he had
+            recognised me when I met him after the service. If he hadn't
+            introduced me to his wife as a first timer. If only I saw a tiny bit
+            of recognition in the eyes of the man who had been my husband for 10
+            years.
+          </div>
+          <div class="mb-4">
+            "To err is human, to forgive is divine." Exactly. Only God can
+            forgive him, not me.
+          </div>
+          <div class="mb-4">
+            On the day I killed Marcus, I entered his office, and he smiled.
+            "Welcome, did you book an appointment? This was supposed to be my
+            rest hour". "I lied that I was your sister and was told to come in".
+            I replied with a dry smile. He straightened up.
+          </div>
+          <div class="mb-4">
+            "Marcus Lawrence", I said as I pulled a chair to sit. "I see you are
+            doing the Lord's work." "What do you want, Dera?" he asked. He
+            remembers my name. He remembers me. The hurt swelled in my chest.
+          </div>
+          <div class="mb-4">
+            "I want you," I said sardonically. He smiled and said as he stood
+            up, "as you can see, I'm not the same man I used to be." "And what
+            happens to the life you led?" I asked, uninterested in his self
+            righteous speech. "That is my past," he said. Oh? And the people you
+            hurt with your past? Who gave you the right to be happy?" My voice
+            rose. But I remembered people were around. So I caught myself and
+            lowered it."Who gave you the right to be happy?"
+          </div>
+          <div class="mb-4">
+            He came nearer. His face was sorry. For a bit, I was scared I
+            wouldn't be able to carry out while I came here. He looked like one
+            who would fall to his knees and beg, but instead, he said, looking
+            me straight in there eyes, "Dera, old things have passed away,
+            behold all things have become new". He held my shoulder. "You too
+            can come to this new life and let go of your past and bitterness."
+            Bewildered, I shook his hand off me, stood up, and then I laughed
+            bitterly, he stared at me in confusion.
+          </div>
+          <div class="mb-4">
+            "What do you want? Money? I have money." He offered. That was it, I
+            could not take it anymore. I pulled out the gun. He moved backward,
+            towards the door, frightened and surprised. "Dera, don't kill me and
+            bring this sin upon your head," he pleaded. "Marcus, this new life
+            you talk about, does it not say to die is to live?" He fell silent.
+          </div>
+          <div class="mb-4">
+            I screamed hard in anger, "you dare call me by name and preach to
+            me? You raped my sister, and it led to her death. Mama died soon
+            after, I lost my womb, I lost five pregnancies, the trauma of the
+            beatings still remains. I have nightmares every night. You ran away
+            after it all to start a new life. Then you preach to me after
+            ignoring who I was that day. A new life? I don't want! I am long
+            dead."
+          </div>
+          <div class="mb-4">
+            Please, let's talk this through, sweat beading on his face. It
+            pleased me. I knew people were coming because of the noise, I could
+            hear rushing footsteps, Marcus's heavy breathing and his pleadings,
+            but my chest hardened. I hated him. Before the door was opened…
+          </div>
+          <div class="mb-4">
+            Two gunshots rang out. One for Marcus, one for me.
+          </div>
+          <div class="mb-4">
+            As I drowned into unconsciousness. I could hear a voice saying,
+            "Thankfully, the bullet didn't hit me. I don't know her. If she
+            survives, she must be arrested!" I remember Mama's words. "Vengeance
+            belongs to the Lord."
+          </div>
+          <div class="mb-4">
+            Tell Mama I didn't wait for God, I did it on my own, but maybe it
+            was in vain.
+          </div>
+          <div class="mb-4">
+            I closed my eyes shut, forever lost in oblivion.
+          </div>
+        </div>
+        <div></div>
+      </div>
+
+      <div
+        class="text-boldTextCl mt-5 mb-5 p-2 bg-imgContainerCl px-[20px] bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] py-[15px] rounded-[10px] flex flex-col justify-center items-center tracking-wider"
+      >
+        <div class="text-center">
+          Let&rsquo;s collaborate and achieve great results together. I'm ready
+          to bring my skills to your team
+        </div>
+        <div class="flex justify-center items-center">
+          <div class="font-semibold">LETS TALK</div>
+          <a href="./contact.html" class="animate-wiggle"
+            ><img src="./images/Right.png" class="w-[30px] h-[30px]" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div
+        class="sib-form rounded-sm mt-3"
+        style="text-align: center; background-color: #171616"
+      >
+        <div id="sib-form-container" class="sib-form-container rounded-sm">
+          <div
+            id="error-message"
+            class="sib-form-message-panel"
+            style="
+              font-size: 16px;
+              text-align: left;
+              font-family: Helvetica, sans-serif;
+              color: #661d1d;
+              background-color: #ffeded;
+              border-radius: 3px;
+              border-color: #ff4949;
+              max-width: 540px;
+            "
+          >
+            <div
+              class="sib-form-message-panel__text sib-form-message-panel__text--center"
+            >
+              <svg
+                viewBox="0 0 512 512"
+                class="sib-icon sib-notification__icon"
+              >
+                <path
+                  d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z"
+                />
+              </svg>
+              <span class="sib-form-message-panel__inner-text">
+                Your subscription could not be saved. Please try again.
+              </span>
+            </div>
+          </div>
+          <div></div>
+          <div
+            id="success-message"
+            class="sib-form-message-panel"
+            style="
+              font-size: 16px;
+              text-align: left;
+              font-family: Helvetica, sans-serif;
+              color: #085229;
+              background-color: #e7faf0;
+              border-radius: 3px;
+              border-color: #13ce66;
+              max-width: 540px;
+            "
+          >
+            <div
+              class="sib-form-message-panel__text sib-form-message-panel__text--center"
+            >
+              <svg
+                viewBox="0 0 512 512"
+                class="sib-icon sib-notification__icon"
+              >
+                <path
+                  d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z"
+                />
+              </svg>
+              <span class="sib-form-message-panel__inner-text">
+                Your subscription has been successful.
+              </span>
+            </div>
+          </div>
+          <div></div>
+          <div
+            id="sib-container"
+            class="sib-container--large sib-container--vertical"
+            style="
+              text-align: center;
+              background-color: rgba(255, 255, 255, 1);
+              max-width: 540px;
+              border-radius: 3px;
+              border-width: 1px;
+              border-color: #171616;
+              border-style: solid;
+              direction: ltr;
+            "
+          >
+            <form
+              id="sib-form"
+              method="POST"
+              action="https://bbc5a7d8.sibforms.com/serve/MUIFALcaX8jrd4eK6KqftTiO3gyCtrCfjeFHyzj1BEYBXnJKhIX2_0q5ys1vprEGaGrN3TNWw84SCgWr_574QHGpmFxIHGZeoMrya8dp2wHlHwt5KpelNeZy2pZdHuC_s__jY8gsKYgIrR7dpy-0iiqmm9WOk44S0zF2f4bxmytwa2z5rAfUCe9WmDWe9tPPAMdGeZGOij7cTqks"
+              data-type="subscription"
+            >
+              <div style="padding: 8px 0">
+                <div
+                  class="sib-form-block"
+                  style="
+                    font-size: 15px;
+                    text-align: left;
+                    font-weight: 700;
+                    font-family: Helvetica, sans-serif;
+                    color: #3c4858;
+                    background-color: transparent;
+                    text-align: left;
+                  "
+                >
+                  <p>Never Miss a Story</p>
+                </div>
+              </div>
+              <div style="padding: 8px 0">
+                <div
+                  class="sib-form-block"
+                  style="
+                    font-size: 13px;
+                    text-align: left;
+                    font-family: Helvetica, sans-serif;
+                    color: #3c4858;
+                    background-color: transparent;
+                    text-align: left;
+                  "
+                >
+                  <div class="sib-text-form-block">
+                    <p>
+                      Join the mailing list to receive updates on new posts
+                      directly in your inbox!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px 0">
+                <div class="sib-input sib-form-block">
+                  <div class="form__entry entry_block">
+                    <div class="form__label-row">
+                      <div class="entry__field">
+                        <input
+                          class="input"
+                          type="text"
+                          id="EMAIL"
+                          name="EMAIL"
+                          autocomplete="off"
+                          placeholder="EMAIL"
+                          data-required="true"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <label
+                      class="entry__error entry__error--primary"
+                      style="
+                        font-size: 16px;
+                        text-align: left;
+                        font-family: Helvetica, sans-serif;
+                        color: #661d1d;
+                        background-color: #ffeded;
+                        border-radius: 3px;
+                        border-color: #ff4949;
+                      "
+                    >
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div style="padding: 8px 0">
+                <div class="sib-form-block" style="text-align: left">
+                  <button
+                    class="sib-form-block__button sib-form-block__button-with-loader"
+                    style="
+                      font-size: 13px;
+                      text-align: left;
+                      font-weight: 700;
+                      font-family: Helvetica, sans-serif;
+                      color: #ffffff;
+                      background-color: #776afe;
+                      border-radius: 3px;
+                      border-width: 0px;
+                    "
+                    form="sib-form"
+                    type="submit"
+                  >
+                    <svg
+                      class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
+                      />
+                    </svg>
+                    SUBSCRIBE
+                  </button>
+                </div>
+              </div>
+
+              <input
+                type="text"
+                name="email_address_check"
+                value=""
+                class="input--hidden"
+              />
+              <input type="hidden" name="locale" value="en" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- END - We recommend to place the above code where you want the form in your website html  -->
+
+      <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+      <script>
+        window.REQUIRED_CODE_ERROR_MESSAGE = "Please choose a country code";
+        window.LOCALE = "en";
+        window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE =
+          "The information provided is invalid. Please review the field format and try again.";
+
+        window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+        window.GENERIC_INVALID_MESSAGE =
+          "The information provided is invalid. Please review the field format and try again.";
+
+        window.translation = {
+          common: {
+            selectedList: "{quantity} list selected",
+            selectedLists: "{quantity} lists selected",
+          },
+        };
+
+        var AUTOHIDE = Boolean(0);
+      </script>
+
+      <script
+        defer
+        src="https://sibforms.com/forms/end-form/build/main.js"
+      ></script>
+
+      <footer>
+        <div class="flex items-center justify-center gap-3 mt-4">
+          <a href="https://www.instagram.com/oluade_a?igsh=MTN3OXo0aHUwYmx3eA=="
+            ><img src="./images/Instagram.png" class="w-[25px] h-[25px]" alt=""
+          /></a>
+          <a href="https://wa.link/85ek2a"
+            ><img src="./images/WhatsApp.png" class="w-[25px] h-[25px]" alt=""
+          /></a>
+          <a href="mailto:oluadedoyin09@gmail.com"
+            ><img src="./images/Email.png" class="w-[25px] h-[25px]" alt=""
+          /></a>
+          <a href="https://www.tiktok.com/@olu_ade?_t=8qJvOC5VMxC&_r=1"
+            ><img src="./images/tiktok.png" class="w-[23px] h-[23px]" alt=""
+          /></a>
+        </div>
+
+        <div class="text-bodyTextCl text-[12px] text-center mt-5">
+          Copyright &copy; All rights reserved.
+        </div>
+      </footer>
+
+      <div class="hidden" id="nav-Links">
+        <div
+          class="flex flex-col gap-3 justify-center items-center bg-imgContainerCl px-[20px] bg-opacity-55 border-[1px] border-white border-opacity-15 backdrop-blur-[40px] py-[15px] rounded-[10px] h-[250px] lg:hidden"
+        >
+          <a class="hover:cursor-pointer text-bodyTextCl" href="./index.html"
+            >HOME</a
+          >
+          <a href="./about.html" class="text-bodyTextCl hover:cursor-pointer"
+            >ABOUT</a
+          >
+          <a
+            href="./myWorkPoetry.html"
+            class="text-bodyTextCl hover:cursor-pointer"
+            >MY WORK</a
+          >
+          <a href="./service.html" class="text-bodyTextCl hover:cursor-pointer"
+            >SERVICE</a
+          >
+          <a
+            href="./blog.html"
+            class="text-bodyTextCl hover:cursor-pointer border-bodyTextCl border-[1px] rounded-[10px] py-[5px] px-[5px]"
+            >BLOG</a
+          >
+          <a href="./contact.html" class="text-bodyTextCl hover:cursor-pointer"
+            >CONTACT</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
