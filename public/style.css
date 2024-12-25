@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.13 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -550,7 +550,7 @@ video {
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
-[hidden] {
+[hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
 
@@ -838,17 +838,17 @@ video {
 
 .border-bodyTextCl {
   --tw-border-opacity: 1;
-  border-color: rgb(152 152 152 / var(--tw-border-opacity));
+  border-color: rgb(152 152 152 / var(--tw-border-opacity, 1));
 }
 
 .border-purpleSt {
   --tw-border-opacity: 1;
-  border-color: rgb(122 109 254 / var(--tw-border-opacity));
+  border-color: rgb(122 109 254 / var(--tw-border-opacity, 1));
 }
 
 .border-white {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
 .border-opacity-15 {
@@ -861,27 +861,27 @@ video {
 
 .bg-backGroundCl {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-imgContainerCl {
   --tw-bg-opacity: 1;
-  background-color: rgb(23 22 22 / var(--tw-bg-opacity));
+  background-color: rgb(23 22 22 / var(--tw-bg-opacity, 1));
 }
 
 .bg-navBarCl {
   --tw-bg-opacity: 1;
-  background-color: rgb(11 10 10 / var(--tw-bg-opacity));
+  background-color: rgb(11 10 10 / var(--tw-bg-opacity, 1));
 }
 
 .bg-purpleCl {
   --tw-bg-opacity: 1;
-  background-color: rgb(122 109 255 / var(--tw-bg-opacity));
+  background-color: rgb(122 109 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-purpletx {
   --tw-bg-opacity: 1;
-  background-color: rgb(119 106 254 / var(--tw-bg-opacity));
+  background-color: rgb(119 106 254 / var(--tw-bg-opacity, 1));
 }
 
 .bg-transparent {
@@ -1018,22 +1018,22 @@ video {
 
 .text-bodyTextCl {
   --tw-text-opacity: 1;
-  color: rgb(152 152 152 / var(--tw-text-opacity));
+  color: rgb(152 152 152 / var(--tw-text-opacity, 1));
 }
 
 .text-boldTextCl {
   --tw-text-opacity: 1;
-  color: rgb(250 250 250 / var(--tw-text-opacity));
+  color: rgb(250 250 250 / var(--tw-text-opacity, 1));
 }
 
 .text-purpleSt {
   --tw-text-opacity: 1;
-  color: rgb(122 109 254 / var(--tw-text-opacity));
+  color: rgb(122 109 254 / var(--tw-text-opacity, 1));
 }
 
 .text-purpletx {
   --tw-text-opacity: 1;
-  color: rgb(119 106 254 / var(--tw-text-opacity));
+  color: rgb(119 106 254 / var(--tw-text-opacity, 1));
 }
 
 .underline {
@@ -1085,7 +1085,7 @@ video {
 
 .focus\:border-purpletx:focus {
   --tw-border-opacity: 1;
-  border-color: rgb(119 106 254 / var(--tw-border-opacity));
+  border-color: rgb(119 106 254 / var(--tw-border-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -1193,17 +1193,17 @@ video {
 
   .lg\:border-purpleCl {
     --tw-border-opacity: 1;
-    border-color: rgb(122 109 255 / var(--tw-border-opacity));
+    border-color: rgb(122 109 255 / var(--tw-border-opacity, 1));
   }
 
   .lg\:border-purpleSt {
     --tw-border-opacity: 1;
-    border-color: rgb(122 109 254 / var(--tw-border-opacity));
+    border-color: rgb(122 109 254 / var(--tw-border-opacity, 1));
   }
 
   .lg\:border-white {
     --tw-border-opacity: 1;
-    border-color: rgb(255 255 255 / var(--tw-border-opacity));
+    border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
   }
 
   .lg\:border-opacity-15 {
@@ -1216,12 +1216,12 @@ video {
 
   .lg\:bg-imgContainerCl {
     --tw-bg-opacity: 1;
-    background-color: rgb(23 22 22 / var(--tw-bg-opacity));
+    background-color: rgb(23 22 22 / var(--tw-bg-opacity, 1));
   }
 
   .lg\:bg-purpleCl {
     --tw-bg-opacity: 1;
-    background-color: rgb(122 109 255 / var(--tw-bg-opacity));
+    background-color: rgb(122 109 255 / var(--tw-bg-opacity, 1));
   }
 
   .lg\:bg-opacity-20 {
@@ -1282,12 +1282,12 @@ video {
 
   .lg\:text-bodyTextCl {
     --tw-text-opacity: 1;
-    color: rgb(152 152 152 / var(--tw-text-opacity));
+    color: rgb(152 152 152 / var(--tw-text-opacity, 1));
   }
 
   .lg\:text-purpletx {
     --tw-text-opacity: 1;
-    color: rgb(119 106 254 / var(--tw-text-opacity));
+    color: rgb(119 106 254 / var(--tw-text-opacity, 1));
   }
 
   .lg\:backdrop-blur-\[40px\] {
